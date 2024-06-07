@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background-color: #F4D04E;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 1rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: white;
+    width: 21.5rem;
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+    /* Agrega sombra a la derecha */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 1);
+}
+/* Cambia el tamaño de la sombra al pasar el cursor sobre la tarjeta */
+.card:hover {
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 1);
+  }
+
+.cardAndText {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* Cambiamos la dirección del contenedor a columna */
+    align-items: flex-start;
+    /* Alineamos los elementos a la izquierda */
+    padding: 1rem;
+    /* Agrega un poco de espacio alrededor del contenido */
+}
+
+.artImage {
+    margin-bottom: 1rem;
+    /* Espacio entre la imagen y el texto */
+    width: 19.5rem;
+    border-radius: 1rem;
+}
+
+.contenido {
+    flex: 1;
+    /* Para que ocupe todo el espacio disponible en el contenedor */
+    text-align: left;
+    /* Para alinear el texto a la izquierda */
+}
+
+.etiqueta {
+    background-color: #F4D04E;
+    padding: 0.2rem 0.5rem;
+    /* Agregar espaciado interno alrededor del texto */
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+h5,
+h3,
+p {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+p {
+    color: gray;
+}
+
+.profilePic {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente el contenido */
+    margin-top: 1rem;
+}
+
+.profilePic img {
+    width: 3rem;
+    /* Define el ancho deseado para la imagen */
+    height: auto;
+    /* Para mantener la proporción */
+    margin-right: 1rem;
+    /* Añade espacio entre la imagen y el texto */
+}
+
+.profilePic span {
+    vertical-align: middle;
+    /* Alinea verticalmente el texto */
+}
+
+footer {
+    margin-top: 12%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media queries para dispositivos de tamaño pequeño, como teléfonos móviles */
+@media (max-width: 768px) {
+    .card {
+      width: 100%; /* La tarjeta ocupa todo el ancho de la pantalla */
+      margin-top: 3rem; /* Espacio superior reducido */
+    }
+  
+    .profilePic img {
+      width: 2rem; /* Reducción del tamaño de la imagen de perfil */
+    }
+  }
+  
